@@ -2,6 +2,12 @@
 
 MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation).
 
+## Requirements
+
+- **Python 3.11+**
+- **uv package manager** - https://docs.astral.sh/uv/getting-started/installation/
+
+
 ## Quick Start
 
 1. **Get Groq API key** (free): https://console.groq.com/keys
@@ -73,9 +79,6 @@ MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation)
 
    Replace `/ABSOLUTE/PATH/TO/` with your project path and add your API key.
 
-
-
-
 ## Example Usage
 
 <p align="center">
@@ -112,7 +115,6 @@ RAG/
 ├── pyproject.toml   # Project dependencies
 └── .env.example     # Environment template
 ```
-
 
 ## Tech Stack
 
