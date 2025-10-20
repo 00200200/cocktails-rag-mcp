@@ -14,6 +14,10 @@ MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation)
 2. **Setup:**
 
    ```bash
+   # Clone the repository
+   git clone https://github.com/00200200/cocktails-rag-mcp.git
+   cd cocktails-rag-mcp
+
    # Copy environment template
    cp .env.example .env
 
