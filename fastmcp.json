@@ -1,0 +1,21 @@
+{
+	"$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
+	"source": {
+		"path": "src/mcp/server.py",
+		"entrypoint": "mcp"
+	},
+	"environment": {
+		"dependencies": [
+			"faiss-cpu",
+			"fastmcp",
+			"jq",
+			"langchain",
+			"langchain-community",
+			"langchain-groq",
+			"langchain-huggingface",
+			"pandas",
+			"python-dotenv",
+			"sentence-transformers"
+		]
+	}
+}
