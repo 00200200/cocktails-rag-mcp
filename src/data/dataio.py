@@ -1,5 +1,6 @@
-from langchain_community.document_loaders import JSONLoader
 from pathlib import Path
+
+from langchain_community.document_loaders import JSONLoader
 
 
 def metadata_func(record: dict, metadata: dict) -> dict:

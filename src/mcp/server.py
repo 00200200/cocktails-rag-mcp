@@ -4,6 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from fastmcp import FastMCP
+
 from src.rag.rag import RAG
 
 mcp = FastMCP("cocktails")
