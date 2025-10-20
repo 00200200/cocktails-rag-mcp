@@ -7,7 +7,6 @@ MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation)
 - **Python 3.11+**
 - **uv package manager** - https://docs.astral.sh/uv/getting-started/installation/
 
-
 ## Quick Start
 
 1. **Get Groq API key** (free): https://console.groq.com/keys
@@ -97,6 +96,18 @@ uv run python -m src.rag.rag
 
 # Test MCP server locally
 uv run python src/mcp/server.py
+```
+
+## Development
+
+### Code Formatting
+
+```bash
+# Format code with black
+uv tool run black .
+
+# Sort imports with isort
+uv tool run isort .
 ```
 
 ## Project Structure
