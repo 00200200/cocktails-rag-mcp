@@ -80,7 +80,7 @@ MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation)
    }
    ```
 
-   Replace `/ABSOLUTE/PATH/TO/` with your project path and add your API key.
+   Replace `/ABSOLUTE/PATH/TO/` with your project path and `GROQ_API_KEY` with your API key.
 
 ## Example Usage
 
