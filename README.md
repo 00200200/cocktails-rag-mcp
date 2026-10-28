@@ -1,6 +1,8 @@
 # Cocktails RAG MCP Server
 
-MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation).
+MCP server for looking up cocktails and suggesting recipes from a local dataset.
+It retrieves recipes with FAISS, reranks the matches with a Hugging Face model,
+and sends the selected context to Groq to generate an answer.
 
 ## Requirements
 
@@ -9,7 +11,7 @@ MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation)
 
 ## Quick Start
 
-1. **Get Groq API key** (free): https://console.groq.com/keys
+1. **Get a Groq API key**: https://console.groq.com/keys
 
 2. **Setup:**
 
@@ -28,12 +30,13 @@ MCP tool for cocktail recommendations using RAG (Retrieval-Augmented Generation)
    uv sync
    ```
 
-3. **Pre-download models (required):**
+3. **Initialize the pipeline:**
 
-   Download embeddings and reranker models:
+   This loads the embedding and reranker models and creates or loads the FAISS
+   index. Model weights are downloaded on first use; the Groq API key must be set.
 
    ```bash
-   uv run python -c "from src.rag.rag import RAG; RAG(); print('Models downloaed!')"
+   uv run python -c "from src.rag.rag import RAG; RAG(); print('Pipeline initialized')"
    ```
 
 4. **Install for Claude Desktop:**
